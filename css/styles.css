@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+
+.game {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    background-image: url('/resources/background3.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+html {
+    font-family: 'Rubik Doodle Shadow';
+    font-size: 3em;
+}
+
+
+.controls {
+    display: flex;
+    gap: 2%;
+    margin-bottom: 5%;
+}
+
+button {
+    background: #3d4053;
+    color: #FFF;
+    border-radius: 15%;
+    padding: 0.5vh 1vh;
+    cursor: pointer;
+    font-family: 'Rubik Doodle Shadow';
+    font-size: 0.5em;
+}
+
+.disabled {
+    color: #757575;
+}
+
+.stats {
+    color: #FFF;
+    font-size: 0.4em;
+}
+
+.board-container {
+    position: relative;
+}
+
+.board,
+.win {
+    border-radius: 5px;
+    box-shadow: 0 25px 50px rgb(33 33 33 / 25%);
+    background: linear-gradient(135deg, #dbcfeb 0%, #c0ac9a 50%, #b1bdf7 100%);
+    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    backface-visibility: hidden;
+}
+
+.board {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+}
+
+.board-container.flipped .board {
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.board-container.flipped .win {
+    transform: rotateY(0) rotateZ(0);
+}
+
+.card {
+    position: relative;
+    width: 8vw;
+    height: 8vw;
+    cursor: pointer;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background: #282A3A;
+    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg) rotateZ(50deg);
+    display: block;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.card.flipped .card-front {
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.card.flipped .card-back {
+    transform: rotateY(0) rotateZ(0);
+}
+
+.win {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(135deg, #dbcfeb 0%, #c0ac9a 50%, #b1bdf7 100%); 
+    font-size: 0.5em;   
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.win-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    color: #282A3A;
+    font-family: 'Single Day';
+}
+
+.highlight {
+    color: #6f00fc;
+}
