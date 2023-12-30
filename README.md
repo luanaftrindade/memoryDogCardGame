@@ -1,6 +1,6 @@
 # Doggo's Memory Cards Game
 
-Welcome to the cuttest Memory Card Game that you will see today! This game was created using HTML, CSS, JavaScript, and jQuery. It features beautiful dogs (all dogs are beautiful, right?) from [The Dog API](https://www.thedogapi.com/) and follows the MVC architecture (at least I tried).
+Welcome to the cuttest Memory Card Game that you will see today! This game was created using HTML, CSS, JavaScript, and jQuery. It features beautiful dogs (all dogs are beautiful, right?) from [The Dog API](https://www.thedogapi.com/) and follows the MVC architecture.
 
 ## Overview
 
