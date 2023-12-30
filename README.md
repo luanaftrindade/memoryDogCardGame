@@ -1,4 +1,4 @@
-# Doggo's Memory Cards Game
+# doggo's memory cards game
 
 Welcome to the cuttest Memory Card Game that you will see today! This game was created using HTML, CSS, JavaScript, and jQuery. It features beautiful dogs (all dogs are beautiful, right?) from [The Dog API](https://www.thedogapi.com/) and follows the MVC architecture (at least I tried).
 
@@ -17,6 +17,7 @@ The Doggo's Memory Cards Game is a classic matching game where players can test 
 
 - **Sounds:** Enjoy a more immersive experience with sound effects.
 - **Rules and Text:** Clear rules and text to guide players through the game.
+- **Bugs (or may I call it features?):** Fixing one bug related to flipped cards - which only occurs very occasionally; fixing the moves counter issue in level two.
 
 ## APIs Used
 
