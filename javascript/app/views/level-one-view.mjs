@@ -24,8 +24,6 @@ const internals = {
 
 const externals = {};
 
-// see what is happening here, rewrite the method to learn
-// Fisher-Yates modern suffle algorithm logic
 
 internals.createLevelOneHtml = function () {
     return `
@@ -65,6 +63,9 @@ internals.startGame = function () {
         console.log("Could not find necessary elements for startGame.");
     }
 }
+
+// Fisher-Yates modern suffle algorithm logic
+
 
 internals.shuffleItems = function (array) {
     const clonedArray = [...array];
@@ -148,7 +149,6 @@ internals.generateMemoryGame = function (images) {
 
 
 
-//see in more detail what this function is doing
 
 internals.flipBackCards = function () {
     document.querySelectorAll('.card:not(.matched)').forEach(card => {
@@ -157,6 +157,8 @@ internals.flipBackCards = function () {
 
     internals.state.flippedCards = 0;
 };
+
+
 
 
 internals.flipCard = function (card) {
