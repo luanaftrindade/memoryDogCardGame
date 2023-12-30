@@ -3,10 +3,10 @@ const internals = {
         gameContainer: document.querySelector('.game'),
         boardContainer: document.querySelector('.board-container'),
         board: document.querySelector('.board'),
-        moves: document.querySelector('.moves'),
-        timer: document.querySelector('.timer'),
+        moves: document.querySelector('.moves-two'),
+        timer: document.querySelector('.timer-two'),
         play: document.querySelector('.play'),
-        start: document.querySelector('.start'),
+        start: document.querySelector('.start-two'),
         win: document.querySelector('.win'),
         dimensions: null
 
@@ -26,9 +26,9 @@ internals.levelTwoHtml = function () {
     return `
   
     <div class="stats">
-        <button class="start">Start</button>
-                <div class="moves">0 moves</div>
-                <div class="timer">time: 0 sec</div>
+        <button class="start-two">Start</button>
+                <div class="moves-two">0 moves</div>
+                <div class="timer-two">time: 0 sec</div>
             </div>
         </div>
         <div class="board-container">
@@ -113,9 +113,9 @@ internals.generateMemoryGame = function (images) {
 
 internals.startGame = function () {
 
-    internals.selectors.moves = document.querySelector('.moves');
-    internals.selectors.timer = document.querySelector('.timer');
-    internals.selectors.start = document.querySelector('.start');
+    internals.selectors.moves = document.querySelector('.moves-two');
+    internals.selectors.timer = document.querySelector('.timer-two');
+    internals.selectors.start = document.querySelector('.start-two');
     // Check if the necessary elements are present
     if (internals.selectors.moves && internals.selectors.timer) {
         internals.state.gameStarted = true;
@@ -196,18 +196,19 @@ internals.flipCard = function (card) {
 
 externals.createLevelTwoHtml = function (images) {
     internals.selectors.gameContainer.innerHTML = internals.levelTwoHtml();
-    internals.generateMemoryGame(images);
+   
 };
 
 
-externals.attachEventListeners = function () {
+externals.attachEventListeners = function (images) {
     document.addEventListener('click', event => {
         const eventTarget = event.target;
         const eventParent = eventTarget.parentElement;
 
         if (eventTarget.className.includes('card') && !eventParent.className.includes('flipped')) {
             internals.flipCard(eventParent);
-        } else if (eventTarget.className.includes('start') && !eventTarget.className.includes('disabled')) {
+        } else if (eventTarget.className.includes('start-two') && !eventTarget.className.includes('disabled')) {
+            internals.generateMemoryGame(images);
             internals.startGame();
         }
     })
