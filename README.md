@@ -38,7 +38,7 @@ The project follows the Model-View-Controller (MVC) architecture to organize and
 
 Contributions are always welcome! If you'd like to enhance the game or fix issues, feel free to submit a pull request. 
 
-## Tools I've worked with
+## Tools
 <p align= left>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" />
