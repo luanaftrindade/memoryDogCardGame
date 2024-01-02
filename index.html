@@ -8,6 +8,9 @@
     <title>🧠 Doggos Memory Game</title>
 
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/textStyles.css" />
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/3.1.1/modernizr.custom.min.js
         "></script>
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"
@@ -21,14 +24,47 @@
 </head>
 
 <body>
-<div class="game">
-    <button class="play">Play</button>
-    
-    <div class="controls"></div>
-    
-</div>
+    <div class="game">
+
+
+        <div class="word">
+            <span>M</span>
+            <span>E</span>
+            <span>M</span>
+            <span>O</span>
+            <span>R</span>
+            <span>Y</span>
+            <span>&nbsp;</span>
+            <span>C</span>
+            <span>A</span>
+            <span>R</span>
+            <span>D</span>
+            <span>&nbsp;</span>
+            <span>G</span>
+            <span>A</span>
+            <span>M</span>
+            <span>E</span>
+
+        </div>
+        <div class="textInformation">
+            <h3 class="clickLetters">(click on the letters!)</h3>
+
+            <p class="aboutTheGame"> Welcome to Doggo's Memory Cards Game, the cutest memory challenge you will see
+                today! 
+                This game features adorable dogs from The Dog API and was created to test your memory with 
+                classic matching gameplay across different levels: 
+                [Level 1] with a 2x2 board and [Level 2] with a 4x4 board. <br>
+                Have fun!</p>
+        </div>
+        <button class="play">Play</button>
+
+        <div class="controls"></div>
+
+    </div>
 
     <script type="module" src="javascript/app/main.mjs" async></script>
+    <script type="module" src="javascript/app/textLogic.mjs"></script>
+
 
 </body>
 

@@ -1,3 +1,6 @@
+// not being used - just some function that i change in the main app but want the keep the old version 
+
+
 internals.generateMemoryGame = function (images) {
     const dimensions = internals.selectors.board.getAttribute('data-dimension');
 

@@ -2,12 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 
 
-.game {
+.game {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 
 body {
     background-image: url('/resources/background3.jpg');
@@ -31,7 +36,8 @@ html {
 button {
     background: #3d4053;
     color: #FFF;
-    border-radius: 15%;
+    border-radius: 40%;
+    width: 30%;
     padding: 0.5vh 1vh;
     cursor: pointer;
     font-family: 'Rubik Doodle Shadow';
